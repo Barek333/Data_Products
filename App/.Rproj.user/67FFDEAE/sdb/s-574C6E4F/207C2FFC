@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nshinyServer(\n    function(input, output) {\n    }\n)\n\n###2\n\nshinyServer(\n    function(input, output) {\n        output$oid1 <- renderPrint({input$id1})\n        output$oid2 <- renderPrint({input$id2})\n        output$odate <- renderPrint({input$date})\n    }\n)\n\n###3\n\n# diabetesRisk <- function(glucose) glucose / 200\n# shinyServer(\n#     function(input, output) {\n#         output$inputValue <- renderPrint({input$glucose})\n#         output$prediction <- renderPrint({diabetesRisk(input$glucose)})\n#     }\n# )\n\n###4\n\n# library(UsingR)\n# data(galton)\n# shinyServer(\n#     function(input, output) {\n#         output$newHist <- renderPlot({\n#             hist(galton$child, xlab='child height', col='lightblue',main='Histogram')\n#             mu <- input$mu\n#             lines(c(mu, mu), c(0, 200),col=\"red\",lwd=5)\n#             mse <- mean((galton$child - mu)^2)\n#             text(63, 150, paste(\"mu = \", mu))\n#             text(63, 140, paste(\"MSE = \", round(mse, 2)))\n#         })\n#     }\n# )",
+    "created" : 1411200521003.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1399701350",
+    "id" : "207C2FFC",
+    "lastKnownWriteTime" : 1411208395,
+    "path" : "C:/Users/Ivan/Desktop/R_EXAMS/Developing_data_products/App/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

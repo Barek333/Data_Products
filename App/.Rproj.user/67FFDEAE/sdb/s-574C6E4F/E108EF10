@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nshinyUI(pageWithSidebar(\n    headerPanel(\"Data science FTW!\"),\n    sidebarPanel(\n        h3('Sidebar text')\n    ),\n    mainPanel(\n        h3('Main Panel text')\n    )\n))\n\n###1\n\nshinyUI(pageWithSidebar(\n    headerPanel(\"Illustrating markup\"),\n    sidebarPanel(\n        h1('Sidebar panel'),\n        h1('H1 text'),\n        h2('H2 Text'),\n        h3('H3 Text'),\n        h4('H4 Text')\n    ),\n    mainPanel(\n        h3('Main Panel text'),\n        code('some code'),\n        p('some ordinary text')\n    )\n))\n\n###2\n\nshinyUI(pageWithSidebar(\n    headerPanel(\"Illustrating inputs\"),\n    sidebarPanel(\n        numericInput('id1', 'Numeric input, labeled id1', 0, min = 0, max = 10, step = 1),\n        checkboxGroupInput(\"id2\", \"Checkbox\",\n                           c(\"Value 1\" = \"1\",\n                             \"Value 2\" = \"2\",\n                             \"Value 3\" = \"3\")),\n        dateInput(\"date\", \"Date:\")\n    ),\n    mainPanel(\n        h3('Illustrating outputs'),\n        h4('You entered'),\n        verbatimTextOutput(\"oid1\"),\n        h4('You entered'),\n        verbatimTextOutput(\"oid2\"),\n        h4('You entered'),\n        verbatimTextOutput(\"odate\")\n    )\n))\n\n###3\n\n# shinyUI(\n#     pageWithSidebar(\n#         # Application title\n#         headerPanel(\"Diabetes prediction\"),\n#         sidebarPanel(\n#             numericInput('glucose', 'Glucose mg/dl', 90, min = 50, max = 200, step = 5),\n#             submitButton('Submit')\n#         ),\n#         mainPanel(\n#             h3('Results of prediction'),\n#             h4('You entered'),\n#             verbatimTextOutput(\"inputValue\"),\n#             h4('Which resulted in a prediction of '),\n#             verbatimTextOutput(\"prediction\")\n#         )\n#     )\n# )\n\n###4\n\n# shinyUI(pageWithSidebar(\n#     headerPanel(\"Example plot\"),\n#     sidebarPanel(\n#         sliderInput('mu', 'Guess at the mean',value = 70, min = 62, max = 74, step = 0.05,)\n#     ),\n#     mainPanel(\n#         plotOutput('newHist')\n#     )\n# ))\n\n",
+    "created" : 1411200522631.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "314050569",
+    "id" : "E108EF10",
+    "lastKnownWriteTime" : 1411206180,
+    "path" : "C:/Users/Ivan/Desktop/R_EXAMS/Developing_data_products/App/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nlibrary(shinyapps)\nrolling <- function(dice_num,dice_type) sum(sample(1:dice_type, dice_num, replace=T))\nshinyServer(\n    function(input, output) {\n        output$roll <- renderPrint({rolling(input$dice_num,input$dice_type)})\n    }\n)",
+    "created" : 1411201432607.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3429510759",
+    "id" : "D4BA5307",
+    "lastKnownWriteTime" : 1411222634,
+    "path" : "C:/Users/Ivan/Desktop/R_EXAMS/Developing_data_products/Project_1/server.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

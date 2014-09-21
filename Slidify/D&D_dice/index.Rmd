@@ -1,0 +1,60 @@
+--- 
+title       : D&D dice roll
+subtitle    : 
+author      : Ivan Barilar  
+job         : PhD Student
+logo        : 
+framework   : io2012
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : zenburn      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: libraries/nvd3}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+--- 
+
+## Why?
+
+- Met some friends for a D&D session?
+- To your dismay you have no dice at hand?
+- Tired of half of your dice ending up on the floor after each roll?
+- To not dispare, just use the D&D dice roll tool!
+
+--- bg:lightyellow
+
+## Advantages of the D&D dice roll tool
+
+- No need to carry dice around all the time.
+- Cant be accused of cheating or having loaded dice.
+- Rolling a dosen of dice with just one click.
+
+--- bg:lightyellow
+
+## Variety of options
+
+- roll up to 10 dice from d4 to d100
+- use a fair random draw algorithm
+
+```{r block2, fig.width=12, fig.height=6,echo=FALSE}
+par(mfrow=c(2,2))
+output <- data.frame(d4=sample(1:4, 10000, replace=T), d6=sample(1:6, 10000, replace=T), d8=sample(1:8, 10000, replace=T),
+                     d10=sample(1:10, 10000, replace=T),d12=sample(1:12, 10000, replace=T),d20=sample(1:20, 10000, replace=T),
+                     d100=sample(1:100, 10000, replace=T))
+plot(density(output$d4),main="d4 roll")
+plot(density(output$d6),main="d6 roll")
+plot(density(output$d20),main="d20 roll")
+plot(density(output$d100),main="d100 roll")
+```
+
+--- bg:lightyellow
+
+## Conclusion
+
+- D&D dice roll is easy to use.
+- Days of borrowing dices and looking under tables are long gone.
+- With all the other useless apps out there why not add another one.
+
+
+
+

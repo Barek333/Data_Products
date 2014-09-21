@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nlibrary(shinyapps)\nshinyUI(pageWithSidebar(\n    headerPanel(\"D&D dice roller\"),\n    sidebarPanel(\n        numericInput('dice_num', 'Choose up to 10 dices to roll', 0, min = 0, max = 10, step = 1),\n        checkboxGroupInput(\"dice_type\", \"Select one dice type\",\n                           c(\"d4\" = 4,\n                             \"d6\" = 6,\n                             \"d8\" = 8,\n                             \"d10\" = 10,\n                             \"d12\" = 12,\n                             \"d20\" = 20,\n                             \"d100\" = 100)),\n        submitButton('Roll!')\n    ),\n    mainPanel(\n        h3('Dice roll result'),\n        h4('You rolled a'),\n        verbatimTextOutput(\"roll\")\n    )\n))",
+    "created" : 1411201431066.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2849583602",
+    "id" : "181766F0",
+    "lastKnownWriteTime" : 1411208981,
+    "path" : "C:/Users/Ivan/Desktop/R_EXAMS/Developing_data_products/Project_1/ui.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,10 @@
+---
+title: "help.Rmd"
+author: "Ivan Barilar"
+date: "Sunday, September 21, 2014"
+output: html_document
+---
+
+Just a short introduction for the D&D dice roll app. It is in itself a very simple app. You have a box where you input the number of dices to be rolled. You chek one of the dice types in the box bellow and then you run the app. Having more than one dice type selected will result in rolling just the smaller one the designated number of times. Also for some unknown reason rerolling the same dice withouth changing the number of dice beforehand will give the same result. As of yet couldnt find a way around it.
+
+

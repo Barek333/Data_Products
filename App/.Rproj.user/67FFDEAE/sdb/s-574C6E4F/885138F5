@@ -1,0 +1,16 @@
+{
+    "contents" : "---\ntitle: \"Automatic and Manual transmition effects on car mileage per gallon(MPG) \"\nauthor: \"Ivan Barilar\"\ndate: \"Sunday, July 27, 2014\"\noutput: pdf_document\n---\n\n## Executive summary\n\nIn this document I will analyse the effects of automatic and manual transmition on car mileage per gallon. I have a dataset of 32 different types of cars with 11 measured variables for each of them. Variables of interest in this analysis will be the average miles per gallon(MPG) and the type of transition. The idea is to see whether the type of transmition(automatic/manual) plays a statistically significant role on the MPG variable. Since each type of car is either manual or automatic we have to rely on other variables that could help us quantify the difference between two types of transmition in regards to MPG. The variables that I will be using are the nuber of cylinders a car has, its horsepower and its weight. I will check whether different models(ones with just some of those variables included) explain the relationship better. In case of using additional variables to possibly obtain an even better fitting model, I decided against it since I have no prior knowledge about those other values so I couldnt make an educated explanation of my results in that case. Results of this analysis will be very rudimental and for any deeper questions or more in depth explanation of the variable relationships additional analysis should be done. I hope this basic analysis will nontheless help to put some perspective on the difference in MPG depending on which type of transmition a car uses.\n\n## Exploratory analysis\n\nFirst I made two datasets out of the original one, one containing manual and the other automatic cars. Also because of the small sample size (19 automatic, 13 manual) I decided to have the same number of cars per dataset so I randomly selected 13 out of 19 automatic cars for further analysis. \n\n```{r,tidy=TRUE,echo=FALSE}\nlibrary(UsingR)\ndata(mtcars)\nautomatic <- subset(mtcars,am==0)\nmanual <- subset(mtcars,am==1)\nset.seed(12345)\nautomatic <-automatic[sample(nrow(automatic),size=13,replace=FALSE),]\n```\n\n\n\nFirst I divided \n\n```{r,tidy=TRUE,echo=FALSE}\ndata(mtcars)\n\n```\n\nYou can also embed plots, for example:\n\n```{r,tidy=TRUE}\nplot(mtcars)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n",
+    "created" : 1411200511258.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2380718717",
+    "id" : "885138F5",
+    "lastKnownWriteTime" : 1406496010,
+    "path" : "C:/Users/Ivan/Desktop/R_EXAMS/Regression_models/Assignment/reg_mod_1.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
